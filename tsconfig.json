@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./build",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "strictFunctionTypes": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}
