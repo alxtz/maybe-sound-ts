@@ -27,6 +27,7 @@ export enum ExternalOrderStatus {
   COMPLETED = "COMPLETED",
   FAILED = "FAILED",
 }
+
 const EOSSchema = z.nativeEnum(ExternalOrderStatus);
 
 function exec(action: string) {

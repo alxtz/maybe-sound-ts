@@ -20,8 +20,6 @@ module.exports = {
   rules: {
     "no-type-assertion/no-type-assertion": "error",
     "no-inner-declarations": 0,
-    "no-debugger": 2,
-    "no-console": 0,
     eqeqeq: 2,
     radix: 2,
     "no-dupe-keys": 2,
@@ -36,27 +34,5 @@ module.exports = {
     "@typescript-eslint/no-unsafe-member-access": "error",
     "@typescript-eslint/no-unsafe-return": "error",
     "@typescript-eslint/prefer-readonly": 2,
-    "@typescript-eslint/explicit-member-accessibility": [
-      "error",
-      {
-        accessibility: "explicit",
-        overrides: {
-          accessors: "explicit",
-          constructors: "no-public",
-          methods: "explicit",
-          properties: "explicit",
-          parameterProperties: "explicit",
-        },
-      },
-    ],
-    "@typescript-eslint/lines-between-class-members": 2,
   },
-  overrides: [
-    {
-      files: ["*.test.ts"],
-      rules: {
-        "@typescript-eslint/unbound-method": [0],
-      },
-    },
-  ],
 };
